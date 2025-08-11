@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "types": ["node"],
+    "rootDir": "src",
+    "outDir": "lib",
+    "verbatimModuleSyntax": false
+  },
+  "compileOnSave": true,
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

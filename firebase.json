@@ -1,0 +1,16 @@
+{
+  "functions": { "source": "functions", "runtime": "nodejs20" },
+  "firestore": { "rules": "firestore.rules" },
+  "hosting": {
+    "public": "out",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [{ "source": "**", "function": "ssrapp" }]
+  },
+  "emulators": {
+    "functions": { "port": 5001 },
+    "firestore": { "port": 8080 },
+    "auth": { "port": 9099 },   
+    "hosting": { "port": 5173 },
+    "ui": { "enabled": true }
+  }
+}
